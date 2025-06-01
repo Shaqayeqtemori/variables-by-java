@@ -1,5 +1,6 @@
 @echo off
+set /p message="Enter commit message: "
 git add .
-git commit -m "auto commit"
-git push origin master
+git commit -m "%message%"
+git push origin main
 pause
